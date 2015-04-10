@@ -1,0 +1,49 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+html {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body{
+  background: #2BBBD8;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  color:#E8EDE0;
+}
+a:visited {
+  color:#102E37;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.form_container{
+  position: relative;
+  top:300px;
+}
+.descript_form{
+  height: 66px;
+}
+
+div{
+  margin-top: 5px;
+}
+#main {
+  font-size: 40px;
+  color: #fdd5b1;
+}
+
+.article_item {
+  position: relative;
+}

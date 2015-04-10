@@ -1,0 +1,25 @@
+<% @article.errors.full_messages.each do |error| %>
+  <div><%= error %></div>
+<% end %>
+<div class="form_container">
+  <form action="/categories/<%= "#{@category.title}"%>" method="post">
+    <div>
+      <input type="text" name="new_title" placeholder="Title" value="<%= @article.title %>">
+    </div>
+    <div>
+      <input class="descript_form" type="text" name="description" placeholder="Description" value="<%= @article.description %>">
+    </div>
+    <div>
+      <input type="text" name="image_url" placeholder="Image link" value="<%=@article.image_url%>">
+    </div>
+    <div>
+      <input type="text" name="price" placeholder="Price" value="<%=@article.price%>">
+    </div>
+    <div>
+      <input type="text" name="email" placeholder="Your Email" value="<%=@article.email%>">
+    </div>
+    <div>
+      <input type="submit" value="Create Article"/>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,13 @@
+<h1><%= @article.title %></h1>
+<% if @article.image_url %>
+  <img src="<%=@article.image_url%>"/>
+<% end %>
+<% if @article.price %>
+  <%="Price: #{@article.price}"%>
+<% end %>
+<h3><%= @article.description %></h3>
+
+<p><%= @article.email %></p>
+
+<p>Your link to edit is: <a href="/categories/<%= "#{@category.title}/#{@article.id}/edit?key=#{@article.key}" %>">http://localhost:9393/categories/<%= "#{@category.title}/#{@article.id}/edit?key=#{@article.key}" %></a></p>
+<p><a href="/categories/<%= "#{@category.title}" %>">Back</a></p>

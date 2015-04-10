@@ -1,0 +1,8 @@
+<h1> Categories YAY!!!</h1>
+
+<% @category.each do |item| %>
+  <p><a href= "/categories/<%= item.title %>"><%= item.title %></a></p>
+<% end %>
+
+<p><a href="/categories/<%=@rand_category.title%>/<%=@article.id%>">Let's Go Wild!!!</a></p>
+

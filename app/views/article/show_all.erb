@@ -1,0 +1,14 @@
+<div class="article_item">
+  <h1><%= @articles.title %></h1>
+  <% if @articles.image_url %>
+    <img src="<%=@articles.image_url%>"/>
+  <% end %>
+  <% if @articles.price %>
+    <%="Price: #{@articles.price}"%>
+  <% end %>
+  <h3><%= @articles.description %></h3>
+
+  <p><%= @articles.email %></p>
+
+  <p><a href="/categories/<%= "#{@category.title}" %>">Back</a></p>
+</div>
